@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you reference this software, please cite it using these metadata."
+title: "bci-membrane-latch: a toy fail-closed OES-32 residual gate between simulated EEG quality and hologram intents"
+abstract: >-
+  Toy simulation (SYNTHETIC data only) of a fail-closed latch that fires one of four hologram UI
+  intents only when the OES-32 residual R = max|x - x_ref| is within tolerance and a stub decoder
+  is confident. Not a medical device, not a clinical BCI decoder, no real EEG.
+type: software
+authors:
+  - given-names: "Jean-François"
+    family-names: "Brisson"
+    affiliation: "Spark AI NLP"
+repository-code: "https://github.com/sparkainlp-x/bci-membrane-latch"
+license: MIT
+version: "0.1.0"
+date-released: "2026-09-27"
+keywords:
+  - fail-closed
+  - safety-gate
+  - simulation
+  - oes-32
+  - residual
+  - brain-computer-interface

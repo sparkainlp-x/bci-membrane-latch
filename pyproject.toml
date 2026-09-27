@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bci-membrane-latch"
+version = "0.1.0"
+description = "Toy simulation of a fail-closed OES-32 residual gate between simulated EEG quality and hologram UI intents. Not a medical device."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Jean-François Brisson" }]
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+bci-membrane-demo = "bci_membrane.bci_membrane:demo"
+
+[project.urls]
+Repository = "https://github.com/sparkainlp-x/bci-membrane-latch"
+"Residual contract" = "https://github.com/sparkainlp-x/oes32-residual"
+
+[tool.setuptools]
+packages = ["bci_membrane"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["UP006", "UP007", "UP035", "UP045"]
