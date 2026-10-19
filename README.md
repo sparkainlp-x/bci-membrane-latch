@@ -2,10 +2,6 @@
 
 A **toy simulation** of a fail-closed safety gate between a noisy, *simulated* EEG-quality signal and four hologram UI intents (`yes`, `no`, `next`, `help`). An intent fires only when the OES-32 residual against a seated reference is within tolerance **and** a stub decoder is confident enough. Otherwise the gate latches and holds.
 
-[![CI](https://github.com/sparkainlp-x/bci-membrane-latch/actions/workflows/ci.yml/badge.svg)](https://github.com/sparkainlp-x/bci-membrane-latch/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Status: toy simulation](https://img.shields.io/badge/status-toy%20simulation-orange.svg)](#what-it-is-not)
-
 > [!WARNING]
 > **Not a medical device. Not a clinical BCI decoder. No real EEG is read. No accessibility efficacy claim is made.**
 > Every signal in this repository comes from a seeded pseudo-random generator. The "decoder" is a number you pass in.
