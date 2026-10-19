@@ -1,24 +1,35 @@
 cff-version: 1.2.0
-message: "If you reference this software, please cite it using these metadata."
-title: "bci-membrane-latch: a toy fail-closed OES-32 residual gate between simulated EEG quality and hologram intents"
+message: "If you reference this software, please cite it using these metadata. A Zenodo DOI is added at the first release."
+title: "bci-membrane-latch: a toy fail-closed OES-32 residual gate between synthetic EEG-like signal quality and hologram intents"
 abstract: >-
   Toy simulation (SYNTHETIC data only) of a fail-closed latch that fires one of four hologram UI
   intents only when the OES-32 residual R = max|x - x_ref| is within tolerance and a stub decoder
-  is confident. Not a medical device, not a clinical BCI decoder, no real EEG.
+  is confident. Synthetic EEG-like signals only; no real EEG is read. Not a medical device and not
+  for diagnosis or treatment; no health claims are made.
 type: software
 authors:
   - given-names: "Jean-François"
     family-names: "Brisson"
-    affiliation: "Spark AI NLP"
+    affiliation: "Spark AI NLP, Fredericton, New Brunswick, Canada"
     orcid: "https://orcid.org/0009-0000-9778-5374"
 repository-code: "https://github.com/sparkainlp-x/bci-membrane-latch"
 license: MIT
 version: "0.1.0"
-date-released: "2026-09-27"
+date-released: "2026-10-18"
 keywords:
   - fail-closed
   - safety-gate
   - simulation
+  - synthetic data
   - oes-32
   - residual
   - brain-computer-interface
+references:
+  - type: software
+    title: "oes32-residual: normative OES-32 residual contract (ADR-001)"
+    authors:
+      - given-names: "Jean-François"
+        family-names: "Brisson"
+        orcid: "https://orcid.org/0009-0000-9778-5374"
+    repository-code: "https://github.com/sparkainlp-x/oes32-residual"
+    doi: "10.5281/zenodo.22985520"
