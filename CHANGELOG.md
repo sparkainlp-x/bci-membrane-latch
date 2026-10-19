@@ -4,7 +4,20 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/).
 
-## [0.1.0] - 2026-09-27
+## [0.1.0] - unreleased (date set when tagged)
+
+### Launch preparation
+- Framing: synthetic EEG-like signals only; not a medical device, not for diagnosis or treatment,
+  no health claims. Docstrings, demo header, SECURITY, CONTRIBUTING and metadata updated to match.
+- Demo `help` intent text changed from "call attendant + high-contrast help card" to
+  "show high-contrast help card"; the demo header now reads "synthetic EEG-like". Snapshot and
+  README updated. Gate behaviour and numbers are unchanged.
+- `coherence()` is described as informational (it never gates).
+- README restructured (limitations, evidence labels, how to cite, license); badges removed.
+- `.zenodo.json` added (community `spark-ai-nlp`, references the oes32-residual concept DOI);
+  CITATION.cff gains the full affiliation and the same reference.
+- MIT copyright line reads "Jean-François Brisson, Spark AI NLP."
+- CI runs on every branch with warnings treated as errors.
 
 ### Added
 - Initial import of the founder's BCI membrane latch script as `bci_membrane/bci_membrane.py`
