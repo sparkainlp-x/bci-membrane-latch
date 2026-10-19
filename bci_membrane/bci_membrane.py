@@ -2,10 +2,11 @@
 """
 BCI → OES-32 membrane latch → hologram intents.
 
-Track A only. Simulated EEG quality, not a clinical decoder.
+Track A only. Synthetic EEG-like signal quality; the decoder is a stub number.
 Four commands fire only when residual is low (SAFE).
 
-NOT a medical device. No real EEG is read. See README.md for scope.
+Synthetic signals only. Not a medical device; not for diagnosis or treatment.
+No real EEG is read. See README.md for scope.
 
 Changes from the founder's original paste (v0.1.0, all fail-closed; see
 CHANGELOG.md and docs/REVIEW.md for the full review):
@@ -57,7 +58,7 @@ def residual(x: Sequence[float], xref: Sequence[float]) -> float:
 
 
 def coherence(x: Sequence[float], xref: Sequence[float]) -> float:
-    """Diagnostic only (never gates). Note: 2p(1-p) is non-monotone in |x - xref|.
+    """Informational only (never gates). Note: 2p(1-p) is non-monotone in |x - xref|.
 
     Returns 0.0 for invalid input.
     """
@@ -126,7 +127,10 @@ class BCIMembrane:
         self.fired: List[IntentEvent] = []
 
     def sample_eeg(self, quality: float) -> None:
-        """Map headset quality onto the 32-face. High noise → high residual."""
+        """Map a simulated contact quality onto the 32-face (synthetic EEG-like values).
+
+        High noise → high residual.
+        """
         q = min(1.0, max(0.0, quality))  # NaN -> 0.0 (worst quality)
         amp = 0.02 + (1.0 - q) * 0.35
         self.face.x = [self.rng.gauss(0.0, amp) for _ in range(W)]
@@ -177,13 +181,13 @@ HOLO = {
     "yes": "avatar nods / confirm booking",
     "no": "avatar shakes head / cancel",
     "next": "next hologram slide",
-    "help": "call attendant + high-contrast help card",
+    "help": "show high-contrast help card",
 }
 
 
 def demo() -> None:
     bci = BCIMembrane()
-    print("BCI membrane latch  ·  toy EEG  ·  not a medical device")
+    print("BCI membrane latch  ·  synthetic EEG-like  ·  not a medical device")
     print("-" * 56)
 
     steps = [

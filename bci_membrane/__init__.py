@@ -1,6 +1,6 @@
-"""Toy BCI membrane latch: a fail-closed gate between simulated EEG quality and hologram intents.
+"""Toy BCI membrane latch: a fail-closed gate between synthetic EEG-like signal quality and hologram intents.
 
-Not a medical device. Not a clinical BCI decoder. No real EEG.
+Synthetic signals only. Not a medical device; not for diagnosis or treatment. No real EEG is read.
 """
 
 from .bci_membrane import (

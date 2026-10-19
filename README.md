@@ -42,13 +42,13 @@ python3 bci_membrane/bci_membrane.py
 Output (seed 32, deterministic; **SYNTHETIC**):
 
 ```text
-BCI membrane latch  ·  toy EEG  ·  not a medical device
+BCI membrane latch  ·  synthetic EEG-like  ·  not a medical device
 --------------------------------------------------------
 seat cap            R=0.000  C=1.000  SAFE=True   yes  p=0.88  →  avatar nods / confirm booking  (hologram:yes)
 ask next            R=0.000  C=1.000  SAFE=True   next p=0.81  →  next hologram slide  (hologram:next)
 cap slips           R=0.768  C=0.763  SAFE=False  help p=0.90  →  HOLD  (latched: residual too high)
 help while noisy    R=0.768  C=0.763  SAFE=False  help p=0.91  →  HOLD  (latched: residual too high)
-reseated            R=0.000  C=1.000  SAFE=True   help p=0.86  →  call attendant + high-contrast help card  (hologram:help)
+reseated            R=0.000  C=1.000  SAFE=True   help p=0.86  →  show high-contrast help card  (hologram:help)
 weak decode         R=0.000  C=1.000  SAFE=True   yes  p=0.41  →  HOLD  (decoder unsure)
 --------------------------------------------------------
 fired 3 commands

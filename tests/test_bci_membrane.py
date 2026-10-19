@@ -176,7 +176,7 @@ def test_truncated_face_fails_closed():
     assert not bci.decode("yes", 0.99).fired
 
 
-def test_nan_quality_is_treated_as_worst():
+def test_nan_quality_counts_as_worst():
     bci = seated()
     bci.sample_eeg(math.nan)
     assert not bci.face.safe

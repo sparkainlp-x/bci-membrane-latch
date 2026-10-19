@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "bci-membrane-latch"
 version = "0.1.0"
-description = "Toy simulation of a fail-closed OES-32 residual gate between simulated EEG quality and hologram UI intents. Not a medical device."
+description = "Toy simulation of a fail-closed OES-32 residual gate between synthetic EEG-like signal quality and hologram UI intents. Synthetic signals only; not a medical device."
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Jean-François Brisson" }]
