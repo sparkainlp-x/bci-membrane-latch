@@ -39,6 +39,7 @@ packages = ["bci_membrane"]
 testpaths = ["tests"]
 pythonpath = ["."]
 addopts = "-q"
+filterwarnings = ["error"]
 
 [tool.ruff]
 line-length = 110

@@ -2,8 +2,8 @@ name: CI
 
 on:
   push:
-    branches: [main]
   pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -31,6 +31,6 @@ jobs:
           ruff check .
           ruff format --check .
       - name: Test
-        run: python -m pytest
+        run: python -W error -m pytest -o addopts="" -ra
       - name: Demo runs as a script
         run: python bci_membrane/bci_membrane.py | diff - tests/demo_output.txt
