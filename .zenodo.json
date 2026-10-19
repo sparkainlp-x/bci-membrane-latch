@@ -1,0 +1,44 @@
+{
+  "upload_type": "software",
+  "title": "bci-membrane-latch: a toy fail-closed OES-32 residual gate between synthetic EEG-like signal quality and hologram intents",
+  "version": "0.1.0",
+  "description": "<p><strong>Toy simulation; all data SYNTHETIC.</strong> A standard-library Python model of a fail-closed latch between a seeded, synthetic EEG-like signal-quality value and four hologram UI intents (yes, no, next, help). An intent fires only when a reference is seated, the OES-32 residual R = max<sub>i</sub> |x[i] &minus; x<sub>ref</sub>[i]| over 32 components is at most 0.08, and a stub decoder confidence is a finite number in [0.6, 1.0]. Anything else holds. Includes 49 tests and a byte-exact demo snapshot, run in CI on Python 3.10&ndash;3.13.</p><p><strong>Not a medical device.</strong> Synthetic EEG-like signals only; no real EEG, headset or person is involved. Not for diagnosis, treatment or monitoring, and no health, efficacy or accessibility-outcome claim is made.</p><p><strong>Relationship to ADR-001.</strong> <code>residual()</code> follows the normative definition in oes32-residual; this repository is a downstream consumer, not a normative source. The tolerance 0.08 is a toy value and is not calibrated to anything.</p><p><strong>Evidence tags.</strong> Demo output and test vectors: <strong>SYNTHETIC</strong>. Any real EEG, headset or user result: <strong>UNRUN</strong> (none exists). Tags follow <a href=\"https://github.com/sparkainlp-x/.github#evidence-tags\">sparkainlp-x/.github</a>.</p>",
+  "creators": [
+    {
+      "name": "Brisson, Jean-François",
+      "affiliation": "Spark AI NLP, Fredericton, New Brunswick, Canada",
+      "orcid": "0009-0000-9778-5374"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "fail-closed",
+    "safety gate",
+    "simulation",
+    "synthetic data",
+    "OES-32",
+    "residual",
+    "research software"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sparkainlp-x/bci-membrane-latch",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.22985520",
+      "relation": "references",
+      "resource_type": "software",
+      "scheme": "doi"
+    }
+  ],
+  "language": "eng",
+  "communities": [
+    {
+      "identifier": "spark-ai-nlp"
+    }
+  ]
+}
