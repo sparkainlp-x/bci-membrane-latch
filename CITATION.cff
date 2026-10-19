@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you reference this software, please cite it using these metadata. A Zenodo DOI is added at the first release."
+message: "If you reference this software, please cite it using these metadata."
 title: "bci-membrane-latch: a toy fail-closed OES-32 residual gate between synthetic EEG-like signal quality and hologram intents"
 abstract: >-
   Toy simulation (SYNTHETIC data only) of a fail-closed latch that fires one of four hologram UI
@@ -16,6 +16,14 @@ repository-code: "https://github.com/sparkainlp-x/bci-membrane-latch"
 license: MIT
 version: "0.1.0"
 date-released: "2026-10-18"
+doi: "10.5281/zenodo.23462506"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23462506"
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.23462507"
+    description: "Version DOI for v0.1.0"
 keywords:
   - fail-closed
   - safety-gate

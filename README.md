@@ -113,7 +113,8 @@ docs/REVIEW.md         # code review, bugs found and fixed, original output
 
 ## How to cite
 
-See [CITATION.cff](CITATION.cff). A Zenodo DOI will be listed here after the first release: `10.5281/zenodo.XXXXXXX` (placeholder).
+See [CITATION.cff](CITATION.cff). Cite the concept DOI [10.5281/zenodo.23462506](https://doi.org/10.5281/zenodo.23462506) for all versions,
+or the version DOI [10.5281/zenodo.23462507](https://doi.org/10.5281/zenodo.23462507) for v0.1.0.
 
 > Brisson, J.-F. (2026). *bci-membrane-latch: a toy fail-closed OES-32 residual gate between synthetic EEG-like signal quality and hologram intents* (Version 0.1.0) [Computer software]. Spark AI NLP, Fredericton, New Brunswick, Canada. https://github.com/sparkainlp-x/bci-membrane-latch
 
